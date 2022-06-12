@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨가</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="links">
+            <h1>제 도시의 날씨가 있어요</h1>
+            <ul class="links">
+                <li onclick="loading()"><a href="#">란던</a></li>
+                <li onclick="loading()"><a href="#">서올</a></li>
+                <li onclick="loading()"><a href="#">일반</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="subtitle">
+            <h2>템피</h2>
+            <form>
+                <label>기온에 보고 있읍니다<br> </label>
+                <select name="temperature-scale" onchange="convert(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </form>
+        </div>
+        <div class="row">
+            <div class="weather">
+                <h1>오늘</h1>
+                <img src="assets/some_rain.png" alt="비다">
+                <p>조금 비가 오다</p>
+                <p class="temps">
+                    <span class="high" id="temp1">12</span>
+                    <span class="low" id="temp2">3</span>
+                </p>
+            </div>
+            <div class="weather">
+                <h1>내일</h1>
+                <img src="assets/cloud_wind.png" alt="구람하고 바람이 불다">
+                <p>구람하고 나무 많이 <br>바람이 불다</br></p>
+                <p class="temps">
+                    <span class="high" id="temp3">13</span>
+                    <span class="low" id="temp4">4</span>
+                </p>
+            </div>
+            <div class="weather">
+                <h1>금요일</h1>
+                <img src="assets/some_clouds.png" alt="구름">
+                <p>조금 구름다</p>
+                <p class="temps">
+                    <span class="high" id="temp5">18</span>
+                    <span class="low" id="temp6">9</span>
+                </p>
+            </div>
+            <div class="weather">
+                <h1>토요일</h1>
+                <img src="assets/some_sun.png" alt="태양">
+                <p>조금 태양다</p>
+                <p class="temps">
+                    <span class="high" id="temp7">21</span>
+                    <span class="low" id="temp8">9</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cookie-policy">
+            <img src="assets/cookie.png" alt="쿠키">
+            <div class="text">
+                <h2>기다립니다! 쿠키 시간.</h2>
+                <p>우리는 콘텐츠와 광고를 개인화하고 소셜 미디어 기능을 제공하며 사이트 트래픽을 분석하기 위해 쿠키(유감스럽게도 식용이 아닌 쿠키)를 사용합니다. <a href="#">더 읽기입니다...</a></p>
+            </div>
+            <button class="cookie-button" onclick="accept()">괜찮아요</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

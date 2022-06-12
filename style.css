@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lavender;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    width: 75%;
+    font-size: 20px;
+}
+
+.header {
+    background-color: skyblue;
+    color: whitesmoke;
+    display: inline-table;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.links ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.links a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.subtitle {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border-bottom: 3px solid blue;
+}
+
+.subtitle select {
+    width: 45px;
+}
+
+.subtitle select, .subtitle label {
+    font-size: 12px;
+    padding: 5px;
+    display: inline-block;
+}
+
+
+.subtitle h2 {
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+}
+
+.weather {
+    flex: auto;
+    text-align: center;
+    background-color: lightblue;
+    padding: 50px 0;
+    padding-top: 45px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-block: -12px;
+}
+
+.weather img {
+    border-radius: 50%;
+    width: 155px;
+    margin: 40px;
+}
+
+.temps {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.high::after, .low::after {
+    content: "°";
+}
+
+.high {
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.low {
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.cookie-button {
+    padding: 8px 15px;
+    font-size: 20px;
+    border: 3px solid blue;
+    box-shadow: 3px 3px black;
+    background-color: lightskyblue;
+}
+
+.cookie-policy {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 150px;
+    padding: 10px;
+    border: 3px solid grey;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
